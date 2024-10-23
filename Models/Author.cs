@@ -12,5 +12,12 @@ namespace Pusok_Alex_Lab2.Models
         [Display(Name = "Last Name")]
         public string lastName { get; set; }
 
+        public string fullName
+        {
+            get
+            {
+                return $"{firstName} {lastName}";
+            }
+        }
     }
 }
